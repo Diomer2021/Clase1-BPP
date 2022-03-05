@@ -5,7 +5,7 @@ try:
     fichero = open("numeros.txt", "r")
     lines = fichero.readlines()
     print(lines)
-except IOError:
+except IOError as err:
     print("No encuentro el fichero o no puedo leerlo")
 else:
     print("He leido el fichero sin problemas. Lo cierro y termino.")
